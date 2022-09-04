@@ -1,0 +1,37 @@
+{
+  "name": "tofu",
+  "version": "1.0.0",
+  "description": "小豆腐学习集",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "prettier": "2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzd-inc/tofu.git"
+  },
+  "keywords": [
+    "小豆腐"
+  ],
+  "author": "小豆腐&小熊猫",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xzd-inc/tofu/issues"
+  },
+  "homepage": "https://github.com/xzd-inc/tofu#readme"
+}
