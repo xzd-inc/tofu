@@ -4,12 +4,14 @@ import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/ico
 
 import Test1 from './views/Test1'
 import Test2 from './views/Test2'
+import Test3 from './views/Test3'
 
 import type { MenuProps } from 'antd';
 
 const commpont = {
   Test1,
-  Test2
+  Test2,
+  Test3
 }
 
 const items: MenuProps['items'] = [
@@ -22,6 +24,11 @@ const items: MenuProps['items'] = [
     label: '学习自定义hook',
     key: 'Test2',
     icon: <AppstoreOutlined />,
+  },
+  {
+    label: '学习组件传值',
+    key: 'Test3',
+    icon: <SettingOutlined />,
   },
 ];
 
