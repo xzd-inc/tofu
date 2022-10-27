@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import { Menu } from 'antd'
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import {
+  AppstoreOutlined,
+  MailOutlined,
+  SettingOutlined,
+} from '@ant-design/icons'
 
 import Test1 from './views/Test1'
 import Test2 from './views/Test2'
 import Test3 from './views/Test3'
 
-import type { MenuProps } from 'antd';
+import type { MenuProps } from 'antd'
 
 const commpont = {
   Test1,
   Test2,
-  Test3
+  Test3,
 }
 
 const items: MenuProps['items'] = [
@@ -30,14 +34,14 @@ const items: MenuProps['items'] = [
     key: 'Test3',
     icon: <SettingOutlined />,
   },
-];
+]
 
 export default function App() {
-  const [current, setCurrent] = useState('Test1');
+  const [current, setCurrent] = useState('Test1')
 
-  const onClick: MenuProps['onClick'] = e => {
-    setCurrent(e.key);
-  };
+  const onClick: MenuProps['onClick'] = (e) => {
+    setCurrent(e.key)
+  }
 
   const Child = commpont[current as keyof typeof commpont]
 
@@ -46,7 +50,7 @@ export default function App() {
       <Menu
         onClick={onClick}
         selectedKeys={[current]}
-        mode="horizontal"
+        mode='horizontal'
         items={items}
       />
       <div style={{ marginTop: 50 }}>

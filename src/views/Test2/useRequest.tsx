@@ -14,10 +14,9 @@ export default function useRequest() {
 
   useEffect(() => {
     // 这儿漏了什么?
-    getList()
-      .then(res => {
-        setList(res)
-      })
+    getList().then((res) => {
+      setList(res)
+    })
   }, [])
 
   return list

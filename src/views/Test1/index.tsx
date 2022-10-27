@@ -5,7 +5,7 @@ import { Button } from 'antd'
  * debugger
  * key，表单用什么key，自己如何生成key？
  * array 生成方式
-*/
+ */
 
 const name1 = '小豆腐'
 const name2 = '小熊猫'
@@ -27,15 +27,9 @@ export default function Test1() {
       >
         {count}
       </Button>
-      {
-        getList(count).map((v) => {
-          return (
-            <div>
-              {v}
-            </div>
-          )
-        })
-      }
+      {getList(count).map((v) => {
+        return <div>{v}</div>
+      })}
     </div>
   )
 }

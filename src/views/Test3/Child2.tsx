@@ -8,7 +8,7 @@ export default function Child2() {
       Child2: {count}
       <Button
         onClick={() => {
-          setCount(prev => ++prev)
+          setCount((prev) => ++prev)
         }}
       >
         Child2 增加值

@@ -8,7 +8,7 @@ export default function Grandson() {
       Grandson: {count}
       <Button
         onClick={() => {
-          setCount(prev => ++prev)
+          setCount((prev) => ++prev)
         }}
       >
         Grandson 增加值

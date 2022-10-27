@@ -7,7 +7,7 @@ import Child2 from './Child2'
  * Grandson 组件如何改index.tsx组件的值？
  * Child2 如何更改 Child1 组件的值？
  * Child2 如何更改 index.tsx 组件的值
-*/
+ */
 
 export default function Test3() {
   const [count, setCount] = useState(1)
