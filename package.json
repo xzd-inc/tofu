@@ -4,6 +4,7 @@
   "description": "小豆腐学习集",
   "type": "module",
   "scripts": {
+    "preinstall": "node ./scripts/hi",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
